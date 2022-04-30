@@ -3,8 +3,8 @@ import './Footer.css'
 
 const Footer = () => {
     return (
-        <div>
-           <h1>Footer</h1> 
+        <div className='footer-area container-fluid '>
+           <p> <small>Copyright&copy;2022 Laptop deals.com</small> </p>
         </div>
     );
 };

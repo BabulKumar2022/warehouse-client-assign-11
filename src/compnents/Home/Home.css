@@ -1,0 +1,43 @@
+.header-hero{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 5px;
+}
+
+.heder-left-text{
+    display: grid;
+    align-content: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+    
+}
+.heder-left-text h1{
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size:40px;
+font-weight:bold;
+margin: 15px;
+}
+.color{
+    color: hsl(16, 92%, 43%);
+}
+.heder-right-img img{
+    width: 100%;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ margin-top: 50px;
+   
+}
+.home-page{
+    margin-bottom: 100px;
+}
+.services-heading{
+    text-align: center;
+    color: hsl(16, 81%, 55%);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}

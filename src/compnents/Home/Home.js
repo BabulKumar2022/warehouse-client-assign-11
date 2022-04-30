@@ -2,8 +2,25 @@ import React from 'react';
 import './Home.css'
 const Home = () => {
     return (
-        <div>
-            <h1>Home</h1>
+        <div className='container home-page'>
+            <div className="header-area">
+                <div className="header-hero">
+                    <div className="heder-left-text">
+                    <h1>Global laptop deals  </h1>
+                  <h1 className='color'>Largest laptop Stock Management</h1>
+                  <p>The best for you. Now here are available pro smart high quality laptop and other electronics device stock management system. more different types of stock controls web application your need. you can contact us soon.</p>
+                    </div>
+                    <div className="heder-right-img">
+                    <img src='./images/laptops.jpg' alt=''/>
+                    </div>
+                </div>
+
+            </div>
+            <section>
+                <div className="Up-coming-section">
+                    <h1>UP COMING ITEMS</h1>
+                </div>
+            </section>
         </div>
     );
 };
