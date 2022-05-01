@@ -3,6 +3,8 @@ import { useCreateUserWithEmailAndPassword, useSignInWithEmailAndPassword } from
 import auth from '../Firebase/Firebase.init';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { navigate, useLocation, useNavigate } from 'react-router-dom';
+import SocialLogin from './SocialLogin/SocialLogin';
+import { sendEmailVerification } from 'firebase/auth';
 
 
 
@@ -29,7 +31,7 @@ const Login = () => {
         // current user login
         const [
             signInWithEmailAndPassword,
-            user,
+            user, 
             loading,
             error,
           ] = useSignInWithEmailAndPassword(auth);
@@ -53,8 +55,10 @@ const Login = () => {
 
             setPassWordError('');
             createUserWithEmailAndPassword(userInfo.email, userInfo.password);
+            
         }else{
             signInWithEmailAndPassword(userInfo.email, userInfo.password);
+            verifyEmail();
         }
 
 
@@ -68,9 +72,17 @@ const Login = () => {
     if(loginUser){
         navigate(from, { replace: true });
     }
-    
+     
+    const verifyEmail =() =>{
+        sendEmailVerification(auth.currentUser)
+        .then(() =>{
+            console.log('Email sent verification')
+        })
+    }
+
+
     return (
-        <div className='container'>
+        <div className='container '>
            
             <form className=' w-50 mx-auto mt-5' onSubmit={handleSubmit}>
             
@@ -94,7 +106,7 @@ const Login = () => {
                     <input required type="checkbox" className="form-check-input" id="exampleCheck1" onChange={()=> setLogin(!login)}/>
                     <label className="form-check-label" htmlFor="exampleCheck1">Already Register</label>
                 </div>
-                <button type="submit" className="btn btn-primary">{login ? 'Login' : 'Register'}</button>
+                <button type="submit" className="btn btn-primary">{login ? 'Login' : 'Register'}</button> 
                 
 
                 <p className='text-danger'>{passWordError}</p>
@@ -108,6 +120,7 @@ const Login = () => {
                     user && <p className='text-success'>Login successfully</p>
                 }
             </form>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };

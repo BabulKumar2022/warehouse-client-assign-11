@@ -1,7 +1,5 @@
-.about-img img{
-    width: 80%;
-    
- }
- .about-container{
-    margin-bottom: 100px;
- }
+.blog-area{
+   border: 2px solid rebeccapurple;
+   text-align: justify;
+   margin-bottom: 20px;
+}
