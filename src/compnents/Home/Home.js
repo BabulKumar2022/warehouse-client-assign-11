@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css'
+import Services from './Services/Services';
 const Home = () => {
     return (
         <div className='container home-page'>
@@ -16,9 +17,16 @@ const Home = () => {
                 </div>
 
             </div>
+            <Services></Services>
+            
             <section>
-                <div className="Up-coming-section">
-                    <h1>UP COMING ITEMS</h1>
+                <div className="most stocked items">
+                    <h1 className='text-center'>Most stocked items</h1>
+                    <div className=" row user-setting">
+                    <img src='./images/hiegth-secttion.jpg' alt=''/>
+                    <h1>2nd</h1>
+                    <h3></h3>
+                    </div>
                 </div>
             </section>
         </div>

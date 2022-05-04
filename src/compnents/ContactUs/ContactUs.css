@@ -1,7 +1,11 @@
 .about-img img{
-    width: 80%;
-    
+    width: 100%;  
  }
  .about-container{
     margin-bottom: 100px;
+    text-align: center;
+ }
+ .content-area{
+   border: dotted black;
+   margin-bottom: 15px;
  }

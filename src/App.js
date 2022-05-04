@@ -9,6 +9,12 @@ import ContactUs from './compnents/ContactUs/ContactUs';
 import NotFound from './compnents/NotFound/NotFound';
 import Footer from './compnents/Footer/Footer';
 import Login from './compnents/Login/Login';
+import RequireAuth from './compnents/RequireAuth/RequireAuth';
+import Register from './compnents/Register/Register';
+import TotalItem from './compnents/TotalItem/TotalItem';
+import SingleItem from './compnents/SingleItem/SingleItem';
+import ManageItem from './compnents/ManageItem/ManageItem';
+import AddItem from './compnents/AddItem/AddItem';
 
 function App() {
   return (
@@ -19,9 +25,32 @@ function App() {
       <Route path='home' element={<Home></Home>}></Route>
       
       <Route path='blogs' element={<Blogs></Blogs>}></Route>
-      <Route path='inventory' element={<Inventory></Inventory>}></Route>
+      <Route path='singleitem' element={<SingleItem></SingleItem>}></Route>
+    
+      <Route path='totalitem' element={
+        <RequireAuth>
+            <TotalItem></TotalItem>
+        </RequireAuth>
+      }></Route>
+      <Route path='inventory/:inventoryId' element={
+        <RequireAuth>
+          <Inventory></Inventory>
+        </RequireAuth>
+      }></Route>
+      <Route path='manageitem' element ={
+        <RequireAuth>
+          <ManageItem></ManageItem>
+        </RequireAuth>
+      }
+      ></Route>
+      <Route path='additem' element={
+        <RequireAuth>
+          <AddItem></AddItem>
+        </RequireAuth>
+      }></Route>
       <Route path='contactus' element={<ContactUs></ContactUs>}></Route>
       <Route path='login' element={<Login></Login>}></Route>
+      <Route path="/register" element={<Register></Register>}></Route>
       <Route path='*' element={<NotFound></NotFound>}></Route>
     </Routes>
     <Footer></Footer>

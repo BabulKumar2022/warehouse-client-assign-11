@@ -1,0 +1,161 @@
+[
+    {
+        "id": 1,
+        "name": "ACER Aspire A515",
+        "price": "$300",
+        "description": "Processor: AMD Ryzen 7 5700U (1.80GHz up to 4.30 GHz),Memory: 8 GB 3200MHz DDR4 RAM,Storage: 512 GB SSD, Display: 15.6inch FHD",
+        "img": "https://i.ibb.co/qF4xk2W/laptop-3.jpg",
+        "supplier": "Acer BD.Limited.Co."
+    },
+    {
+        "id": 2,
+        "name": "Asus VivoBook 15",
+        "price": "$100",
+        "description": "Processor: Intel Core i3-10110U (4M Cache, 2.10 GHz up to 4.10 GHz),Memory: 4GB DDR4 3200MHz RAM ,Storage: 1TB 5400 RPM SATA HDD,Display: 15.6inch FHD",
+        "img": "https://i.ibb.co/x5qbr2R/laptop-19.jpg",
+        "supplier": "ASUS BD.Limited.Co"
+    },
+    {
+        "id": 3,
+        "name": "HP 15s-fq2644TU ",
+        "price": "$150",
+        "description": "Processor: Intel Core i3-1115G4 (6M Cache, 3.00 GHz up to 4.10 GHz) ,Memory: 8 GB DDR4-3200 MHz RAM ,Storage: 512 GB PCIe NVMe M.2 SSD ,Display: 15.6inch HD",
+        "img": "https://i.ibb.co/LrkNjS6/laptop-18.jpg",
+        "supplier": "HP BD.Limited.Co."
+    },
+    {
+        "id": 4,
+        "name": "Dell Inspiron 15 3510",
+        "price": "$280",
+        "description": "Processor: Intel Pentium Silver N5030 (4MB Cache, 1.10 GHz Up To 3.10 GHz ),RAM: 4GB 2400MHz DDR4 ,Storage: 1TB SATA 5400RPM,Display: 15.6inch HD",
+        "img": "https://i.ibb.co/8MNj44L/laptop-17.jpg",
+        "supplier": "DELL BD.Limited.Co."
+    },
+    {
+        "id": 5,
+        "name": "Dell Vostro 14 3405 ",
+        "price": "$300",
+        "description": "Processor: Ryzen 3 3250U (4MB CPU Cache, 2.60GHz up to 3.50GHz) , RAM: 4GB 3200 MHz DDR4 ,HDD: 1TB 5400rpm SATA ,Display: 14ich FHD",
+        "img": "https://i.ibb.co/LhsFqkp/laptop-16.jpg",
+        "supplier": "DELL BD.Limited.Co."
+    },
+    {
+        "id": 6,
+        "name": "ACER Aspire A520",
+        "price": "$300",
+        "description": "Processor: AMD Ryzen 7 5700U (2.80GHz up to 4.30 GHz),Memory: 8 GB 3200MHz DDR4 RAM,Storage: 512 GB SSD, Display: 15.6inch FHD",
+        "img": "https://i.ibb.co/dQctHkn/laptop-5.jpg",
+        "supplier": "ACER BD.Limited.Co."
+    },
+    {
+        "id": 7,
+        "name": "Lenovo IdeaPad 10IGL",
+        "price": "$100",
+        "description": "Processor: Cori3 5700U (2.80GHz up to 4.30 GHz),Memory: 8 GB 3200MHz DDR4 RAM,Storage: 512 GB SSD, Display: 15.6inch FHD",
+        "img": "https://i.ibb.co/J34GWNx/laptop-15.jpg",
+        "supplier": "Lenovo  BD.Limited.Co."
+    },
+    {
+        "id": 8,
+        "name": "Asus VivoBook 15",
+        "price": "$100",
+        "description": "Processor: Cori3 5700U (2.80GHz up to 4.30 GHz),Memory: 8 GB 3200MHz DDR4 RAM,Storage: 512 GB SSD, Display: 15.6inch FHD",
+        "img": "https://i.ibb.co/LJNjM3Q/laptop-14.jpg",
+        "supplier": "ASUS  BD.Limited.Co."
+        
+    },
+    {
+        "id": 9,
+        "name": "Asus VivoBook 15L",
+        "price": "$100",
+        "description": "Processor: Cori3 5700U (2.80GHz up to 4.30 GHz),Memory: 8 GB 3200MHz DDR4 RAM,Storage: 512 GB SSD, Display: 15.6inch FHD",
+        "img": "https://i.ibb.co/xgt86Lp/laptop-13.jpg",
+        "supplier": "ASUS  BD.Limited.Co."
+    },
+    {
+        "id": 10,
+        "name": "Asus VivoBook 15L",
+        "price": "$100",
+        "description": "Processor: Cori3 5700U (2.80GHz up to 4.30 GHz),Memory: 8 GB 3200MHz DDR4 RAM,Storage: 512 GB SSD, Display: 15.6inch FHD",
+        "img": "https://i.ibb.co/9gWwgMK/laptop-12.jpg",
+        "supplier": "ASUS  BD.Limited.Co."
+    },
+    {
+        "id": 11,
+        "name": "Lenovo IdeaPad 10IGL",
+        "price": "$100",
+        "description": "Processor: Cori3 5700U (2.80GHz up to 4.30 GHz),Memory: 8 GB 3200MHz DDR4 RAM,Storage: 512 GB SSD, Display: 15.6inch FHD",
+        "img": "https://i.ibb.co/gTysYJ7/laptop-11.jpg",
+        "supplier": "LENOVO  BD.Limited.Co."
+    },{
+        "id": 12,
+        "name": "Asus VivoBook 15L",
+        "price": "$100",
+        "description": "Processor: Cori3 5700U (2.80GHz up to 4.30 GHz),Memory: 8 GB 3200MHz DDR4 RAM,Storage: 512 GB SSD, Display: 15.6inch FHD",
+        "img": "https://i.ibb.co/hHxWLhD/laptop-10.jpg",
+        "supplier": "LENOVO  BD.Limited.Co."
+    },{
+        "id": 13,
+        "name": "Lenovo IdeaPad 10IGL",
+        "price": "$100",
+        "description": "Processor: Cori3 5700U (2.80GHz up to 4.30 GHz),Memory: 8 GB 3200MHz DDR4 RAM,Storage: 512 GB SSD, Display: 15.6inch FHD",
+        "img": "https://i.ibb.co/t4Tn3XQ/laptop-9.jpg",
+        "supplier": "LENOVO  BD.Limited.Co."
+    },{
+        "id": 14,
+        "name": "Lenovo IdeaPad 10IGL",
+        "price": "$100",
+        "description": "Processor: Cori3 5700U (2.80GHz up to 4.30 GHz),Memory: 8 GB 3200MHz DDR4 RAM,Storage: 512 GB SSD, Display: 15.6inch FHD",
+        "img": "https://i.ibb.co/dJd0CDG/laptop-8.jpg",
+        "supplier": "LENOVO  BD.Limited.Co."
+    },{
+        "id": 15,
+        "name": "Lenovo IdeaPad 10IGL",
+        "price": "$100",
+        "description": "Processor: Cori3 5700U (2.80GHz up to 4.30 GHz),Memory: 8 GB 3200MHz DDR4 RAM,Storage: 512 GB SSD, Display: 15.6inch FHD",
+        "img": "https://i.ibb.co/fnp7pLF/laptop-7.jpg",
+        "supplier": "LENOVO  BD.Limited.Co."
+    },{
+        "id": 16,
+        "name": "Lenovo IdeaPad 10IGL",
+        "price": "$100",
+        "description": "Processor: Cori3 5700U (2.80GHz up to 4.30 GHz),Memory: 8 GB 3200MHz DDR4 RAM,Storage: 512 GB SSD, Display: 15.6inch FHD",
+        "img": "https://i.ibb.co/MPNVDs5/laptop-6.jpg",
+        "supplier": "LENOVO  BD.Limited.Co."
+    },{
+        "id": 17,
+        "name": "Lenovo IdeaPad 10IGL",
+        "price": "$100",
+        "description": "Processor: Cori3 5700U (2.80GHz up to 4.30 GHz),Memory: 8 GB 3200MHz DDR4 RAM,Storage: 512 GB SSD, Display: 15.6inch FHD",
+        "img": "https://i.ibb.co/dQctHkn/laptop-5.jpg",
+        "supplier": "LENOVO  BD.Limited.Co."
+    },{
+        "id": 18,
+        "name": "Lenovo IdeaPad 10IGL",
+        "price": "$100",
+        "description": "Processor: Cori3 5700U (2.80GHz up to 4.30 GHz),Memory: 8 GB 3200MHz DDR4 RAM,Storage: 512 GB SSD, Display: 15.6inch FHD",
+        "img": "https://i.ibb.co/fYgnbrp/laptop-4.jpg",
+        "supplier": "LENOVO  BD.Limited.Co."
+    },{
+        "id": 19,
+        "name": "Lenovo IdeaPad 10IGL",
+        "price": "$100",
+        "description": "Processor: Cori3 5700U (2.80GHz up to 4.30 GHz),Memory: 8 GB 3200MHz DDR4 RAM,Storage: 512 GB SSD, Display: 15.6inch FHD",
+        "img": "https://i.ibb.co/WfXffGS/laptop-20.jpg",
+        "supplier": "LENOVO  BD.Limited.Co."
+    },{
+        "id": 20,
+        "name": "Lenovo IdeaPad 10IGL",
+        "price": "$100",
+        "description": "Processor: Cori3 5700U (2.80GHz up to 4.30 GHz),Memory: 8 GB 3200MHz DDR4 RAM,Storage: 512 GB SSD, Display: 15.6inch FHD",
+        "img": "https://i.ibb.co/qF4xk2W/laptop-3.jpg",
+        "supplier": "LENOVO  BD.Limited.Co."
+    },{
+        "id": 21,
+        "name": "Lenovo IdeaPad 10IGL",
+        "price": "$100",
+        "description": "Processor: Cori3 5700U (2.80GHz up to 4.30 GHz),Memory: 8 GB 3200MHz DDR4 RAM,Storage: 512 GB SSD, Display: 15.6inch FHD",
+        "img": "https://i.ibb.co/JpTSvty/laptop-2.jpg",
+        "supplier": "LENOVO  BD.Limited.Co."
+    }
+]

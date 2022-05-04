@@ -32,6 +32,7 @@ margin: 15px;
 }
 .home-page{
     margin-bottom: 100px;
+  
 }
 .services-heading{
     text-align: center;
@@ -40,4 +41,9 @@ margin: 15px;
     margin-bottom: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     
+}
+.user-setting{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 5px;
 }

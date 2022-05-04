@@ -4,7 +4,7 @@ import './Blogs.css'
 const Blogs = () => {
     return (
         <div>
-            <h1>Blogs</h1>
+            <h1 className='text-center'>Blogs</h1>
             <div className="blog-area container w-50 mx-auto mt-5">
                 <h5>Javascript এবং Node.js এর মধ্যে পার্থক্য কি?</h5>
                 <p> Javascript একটি scripted Progarmming Language যাহা Browser এ রান করে অন্য দিকে Node JS হল Javascript এর জন্য একটি interpreter or running environment । Node.js এর কাজ হল Javascript কে server এ রান করা। NodeJS এর মাধ্যমে Javascript কে machine code এ রূপান্তর করা হয়। মেশিন কোড খুব দ্রুত run করা সম্ভব। javascript হল  lightweight scripting language যাহা object-oriented । Javascript  মুলত  client সাইডে রান করে সুতরাং এটা front end development এর জন্য ব্যবহৃত হয়। অন্যদিকে Node JS  server-side এ রান করে সুতরাং JS এর মাধ্যমে server-side development এর জন্য ব্যবহৃত হয়</p>

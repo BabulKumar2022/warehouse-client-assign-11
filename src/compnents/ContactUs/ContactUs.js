@@ -6,7 +6,8 @@ const ContactUs = () => {
     return (
         <div className='about-container'>
             <div className="row col-4  mx-auto">
-                <h1 className='about-header text-center'>Contactus</h1>
+                <h1 className='about-header text-center'>Contact us</h1>
+                <div className="content-area">
                 <div className="about-img ">
                      <img src="./images/tutor (2).jpg" alt="" />
                 </div>
@@ -16,6 +17,8 @@ const ContactUs = () => {
                     <p>I am a professional laptop distributor. I distribute all kinds of laptop  more....</p>
                     
                 </div>
+                </div>
+                
                 <Link to="/home" className="btn btn-primary">Go home</Link>
             </div>
         </div>

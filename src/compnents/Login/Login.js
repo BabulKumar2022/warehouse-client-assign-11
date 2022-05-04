@@ -1,126 +1,76 @@
-import React, { useState } from 'react';
-import { useCreateUserWithEmailAndPassword, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import auth from '../Firebase/Firebase.init';
-import { useAuthState } from 'react-firebase-hooks/auth';
-import { navigate, useLocation, useNavigate } from 'react-router-dom';
+import React, { useRef } from 'react';
+import { Form, Button } from 'react-bootstrap';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+// import auth from '../../compnents/Firebase/Firebase.init';
 import SocialLogin from './SocialLogin/SocialLogin';
-import { sendEmailVerification } from 'firebase/auth';
+import auth from '../Firebase/Firebase.init';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
 
 
+const Login = () => {
+ const emailRef = useRef('');
+ const passwordRef = useRef('');
+ const navigate = useNavigate();
+ const location = useLocation();
+ let from = location.state?.from?.pathname || '/';
+ const [
+    signInWithEmailAndPassword,
+    user,
+    loading,
+    error,
+  ] = useSignInWithEmailAndPassword(auth);
 
-const Login = () => { 
-    const [login, setLogin]= useState(false);
-    const [passWordError, setPassWordError] = useState('');
-   
-   const [userInfo, setUserInfo]= useState({
-       email: '',
-       password: '',
-       confirmPassword: ''
-   })
-//    new user creat
-        const [
-            createUserWithEmailAndPassword,
-            createUser,
-            createLoading,
-            createError,
-        ] = useCreateUserWithEmailAndPassword(auth);
+  if(user){
+      navigate(from, {replace: true});
+  }
 
-        // current user login
-        const [
-            signInWithEmailAndPassword,
-            user, 
-            loading,
-            error,
-          ] = useSignInWithEmailAndPassword(auth);
+ const handleSubmit = event =>{
+     event.preventDefault();
+    const email = emailRef.current.value;
+    const password = passwordRef.current.value;
+    signInWithEmailAndPassword(email, password);
+    console.log(email, password);
+    toast('logging....')
 
-          const [loginUser, loginLoading, loginError] = useAuthState(auth);
+ }
+        const navigateRegister = event =>{
+            navigate('/register');
 
-   const handleFormInput = (event) =>{
-       console.log(event.target.name, event.target.value);
-       userInfo[event.target.name]= event.target.value;
-   }
-   
-    const handleSubmit = (event) =>{
-        event.preventDefault();
-        
-        if(! login){
-            if(userInfo.password !== userInfo.confirmPassword){
-                setPassWordError('Password can not match');
-                return;
-            }
-
-
-            setPassWordError('');
-            createUserWithEmailAndPassword(userInfo.email, userInfo.password);
-            
-        }else{
-            signInWithEmailAndPassword(userInfo.email, userInfo.password);
-            verifyEmail();
         }
 
 
-        console.log(userInfo);
-    }
-   
-    let navigate = useNavigate();
-    let location = useLocation();
-    
-    let from = location.state?.from?.pathname || "/";
-    if(loginUser){
-        navigate(from, { replace: true });
-    }
-     
-    const verifyEmail =() =>{
-        sendEmailVerification(auth.currentUser)
-        .then(() =>{
-            console.log('Email sent verification')
-        })
-    }
-
 
     return (
-        <div className='container '>
-           
-            <form className=' w-50 mx-auto mt-5' onSubmit={handleSubmit}>
-            
-            <h1>{login ? 'Login'  : 'Register'} </h1>
-                <div className="mb-3">
-                    <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-                    <input required onBlur={(event)=> handleFormInput(event)} type="text" className="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-                    <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div className="mb-3">
-                    <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
-                    <input required onBlur={(event)=> handleFormInput(event)} type="password" name="password" className="form-control" id="exampleInputPassword1"/>
-                </div>
-                {
-                   !login && <div className="mb-3">
-                    <label htmlFor="exampleInputPassword1" className="form-label">Confirm Password</label>
-                    <input onBlur={(event)=> handleFormInput(event)} type="password" name="confirmPassword" className="form-control" id="exampleInputPassword1"/>
-                </div>
-                }
-                <div className="mb-3 form-check">
-                    <input required type="checkbox" className="form-check-input" id="exampleCheck1" onChange={()=> setLogin(!login)}/>
-                    <label className="form-check-label" htmlFor="exampleCheck1">Already Register</label>
-                </div>
-                <button type="submit" className="btn btn-primary">{login ? 'Login' : 'Register'}</button> 
-                
+        <div id='login' className='container w-50 mx-auto'>
+            <h1 className=' text-center text-primary mt-2 ' >Login</h1>
+            <Form onSubmit={handleSubmit}>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control ref={emailRef} type="email" required placeholder="Enter email" />
+                    <Form.Text className="text-muted">
+                    We'll never share your email with anyone else.
+                    </Form.Text>
+                </Form.Group>
 
-                <p className='text-danger'>{passWordError}</p>
-                {
-                    createError && <p className='text-danger'>{createError.message}</p>
-                }
-                {
-                    createUser && <p className='text-success'>User create successfully</p>
-                }
-                {
-                    user && <p className='text-success'>Login successfully</p>
-                }
-            </form>
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control ref={passwordRef} type="password" required placeholder="Password" />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                    <Form.Check type="checkbox" label="Check me out" />
+                </Form.Group>
+                <Button variant="primary" type="submit">
+                    Submit
+                </Button>
+            </Form>
+            <p>New to laptop deals ? <Link to={'/register'} className='text-danger text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
             <SocialLogin></SocialLogin>
+            <ToastContainer />
         </div>
     );
 };
