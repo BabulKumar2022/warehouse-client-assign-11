@@ -8,7 +8,7 @@ const TotalItem = () => {
     const [items,  setItems ] =useState([]);
 
     useEffect( () =>{
-        fetch('services.json')
+        fetch('http://localhost:5000/laptops')
         .then(res => res.json())
         .then(data => setItems(data));
     }, [])
@@ -20,7 +20,7 @@ const TotalItem = () => {
                 <div className="items-container">
                     {
                         items.map(item => <SingleItem
-                        key={item.id}
+                        key={item._id}
                         item ={item}
                         ></SingleItem>)
                     }

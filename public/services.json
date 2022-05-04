@@ -155,7 +155,6 @@
         "name": "Lenovo IdeaPad 10IGL",
         "price": "$100",
         "description": "Processor: Cori3 5700U (2.80GHz up to 4.30 GHz),Memory: 8 GB 3200MHz DDR4 RAM,Storage: 512 GB SSD, Display: 15.6inch FHD",
-        "img": "https://i.ibb.co/JpTSvty/laptop-2.jpg",
-        "supplier": "LENOVO  BD.Limited.Co."
+        "img": "https://i.ibb.co/JpTSvty/laptop-2.jpg"
     }
 ]

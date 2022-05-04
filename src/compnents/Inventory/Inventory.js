@@ -6,7 +6,7 @@ const Inventory = () => {
     const [laptops, setLaptops] = useState([]);
 
     useEffect(() =>{
-        fetch('http://localhost:5000/laptop')
+        fetch('http://localhost:5000/laptops')
         .then(res => res.json())
         .then(data => setLaptops(data));
     }, [])
@@ -25,7 +25,7 @@ const Inventory = () => {
         const productData = {name, suppName};
 
         // post data UI(form) to server
-        fetch('http://localhost:5000/laptop', {
+        fetch('http://localhost:5000/laptops', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -56,7 +56,7 @@ const Inventory = () => {
             <h3>server:{laptops.length}</h3>
             <ul>
                 {
-                    laptops.map(laptop => <li key={laptop.id}>Name: {laptop.name} Supplier: {laptop.suppName} </li>)
+                    laptops.map(laptop => <li key={laptop._id}>Name: {laptop.name} Supplier: {laptop.suppName} </li>)
                 }
             </ul>
 
