@@ -1,37 +1,50 @@
 import React from 'react';
 import './AddItem.css'
 
+
 const AddItem = () => {
-    const handleAddUser = event =>{
-        event.preventDefault();
-        const name = event.target.name.value;
-        const suppName = event.target.suppName.value;
-        console.log(name, suppName);
-        const productData = {name, suppName};
-
-        // post data UI to server
-        fetch('http://localhost:5000/laptop', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body:JSON.stringify(productData)
-        })
-        .then(res => res.json())
-        .then(data => {
-            console.log(data);
-        })
-
-
-    }
+ 
+   const handleAddUser = event =>{
+       event.preventDefault();
+       const name = event.target.name.value;
+       const email =event.target.email.value;
     
+       const user ={name, email};
+        console.log(user)
+
+// send data to server
+
+    fetch('http://localhost:5000/user',{
+        method: 'POST',
+        headers:{
+            'content-type': 'application/json'
+        },
+        body: JSON.stringify(user)
+    })
+    .then(res =>  res.json())
+    .then(data =>{
+        console.log('success', data);
+        alert('One new product added successfully, Thank you.');
+        event.target.reset();
+    })
+
+
+
+
+
+
+   }
+
+
     return (
-        <div>
-            <h1>Add Item</h1>
-            <form onSubmit={handleAddUser}>
-                <input type="text" name="name" placeholder='Brand name' />
-                <input type="text" name="suppName" placeholder='supplier name' />
-                <input type="submit" value="Add item" />
+        <div className='w-50 mx-auto text-center'>
+            <h2>Add new item</h2>
+            <form onSubmit={handleAddUser} >
+                <input type="text"  name="name" placeholder='Brand name' required/>
+                <br />
+                <input type="text"  name="email" placeholder='email name' required/>
+                <br />
+                <input type="submit" value='Add Item'/>
             </form>
             
         </div>

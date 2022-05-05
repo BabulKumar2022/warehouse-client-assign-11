@@ -1,26 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import Inventory from '../../Inventory/Inventory';
 import Service from '../Service/Service';
 import './Services.css'
-
-
-
-
-
-
-
 
 
 const Services = () => {
     const [services, setServices] = useState([]);
 
 useEffect(()=>{
-    fetch('services.json')
+    fetch('http://localhost:5000/laptops')
     .then(res => res.json())
     .then(data => setServices(data))
 },[])
  
-
 
     return (
         <div id="services" className='container'>
@@ -35,8 +26,6 @@ useEffect(()=>{
                     }
                 </div>
             </div>
-            
-            
         </div>
     );
 };

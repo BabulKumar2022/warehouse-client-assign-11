@@ -15,6 +15,7 @@ import TotalItem from './compnents/TotalItem/TotalItem';
 import SingleItem from './compnents/SingleItem/SingleItem';
 import ManageItem from './compnents/ManageItem/ManageItem';
 import AddItem from './compnents/AddItem/AddItem';
+import Manage from './compnents/Manage/Manage';
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
           <AddItem></AddItem>
         </RequireAuth>
       }></Route>
+      <Route path='manage' element={<Manage></Manage>}></Route>
       <Route path='contactus' element={<ContactUs></ContactUs>}></Route>
       <Route path='login' element={<Login></Login>}></Route>
       <Route path="/register" element={<Register></Register>}></Route>
