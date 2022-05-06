@@ -16,6 +16,7 @@ import SingleItem from './compnents/SingleItem/SingleItem';
 import ManageItem from './compnents/ManageItem/ManageItem';
 import AddItem from './compnents/AddItem/AddItem';
 import Manage from './compnents/Manage/Manage';
+import User from './compnents/User/User';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <Route path='home' element={<Home></Home>}></Route>
       
       <Route path='blogs' element={<Blogs></Blogs>}></Route>
+      <Route path='user' element={<User></User>}></Route>
       <Route path='singleitem' element={<SingleItem></SingleItem>}></Route>
     
       <Route path='totalitem' element={

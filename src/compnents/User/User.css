@@ -1,0 +1,33 @@
+.user-team-member{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+
+}
+.single-user{
+    line-height: .5;
+    font-size: 14px;
+}
+.single-user img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+.user-area{
+    background-color: rgba(43, 149, 241, 0.23);
+    height: 100%;
+    width: 100%;
+    margin-top: 40px;
+    bottom: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*make service responsive*/
+@media only screen and (max-width:576px){
+    .user-team-member{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and (min-width:577px) and (max-width:992px){
+   .user-team-member{
+       grid-template-columns: repeat(2, 1fr);
+   }
+}

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Home.css'
 import Services from './Services/Services';
 import { useNavigate } from 'react-router-dom';
+import User from '../User/User';
 const Home = (_id) => {
 
     const navigate = useNavigate();
@@ -46,7 +47,7 @@ const Home = (_id) => {
             </section>
             <section>
                 <div className="two-sec-area">
-                
+                <User></User>
                 </div>
             </section>
         </div>
