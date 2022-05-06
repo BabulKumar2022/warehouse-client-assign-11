@@ -18,7 +18,10 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarText">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 nav-font">
+                <li className="nav-item">
+                <Link className="nav-link  nav-logo" aria-current="page" to="/home"><h6>Laptop Stock</h6></Link>
+                </li>
                 <li className="nav-item">
                 <Link className="nav-link " aria-current="page" to="/home">Home</Link>
                 </li>
@@ -29,25 +32,21 @@ const Navbar = () => {
                 <li className="nav-item">
                 <Link className="nav-link" to="/contactus">Contact Us</Link>
                 </li>
-                
-                {/* <li className="nav-item">
-                <Link className="nav-link text-white" to="/totalitem">{!user ? '' : 'Total item'}</Link>
-                </li> */}
                 <li className="nav-item">
-                <Link className="nav-link text-white" to="/inventory/id">{!user ? '' : 'Inventory'}</Link>
+                <Link className="nav-link text-white" to="/inventory/id">{!user ? '' : 'Inventory-Manage'}</Link>
                 </li>
                 <li className="nav-item">
-                <Link className="nav-link text-white" to="/manage/:id">{!user ? '' : 'Manage'}</Link>
+                <Link className="nav-link text-white" to="/manage/:id">{!user ? '' : 'Update'}</Link>
                 </li>
                 <li className="nav-item">
-                <Link className="nav-link text-white" to="/additem">{!user ? '' : 'Add Item'}</Link>
+                <Link className="nav-link text-white " to="/additem">{!user ? '' : 'Add-Item'}</Link>
                 </li>
             </ul>
             <span className="navbar-text">
                 <ul className='navbar-nav'>
                     <li className="nav-item">
                         <Link className="nav-link" to="/login">{
-                    !user ? 'Login' : <span> <button
+                    !user ? 'Login' : <span>{ user.email} <button
                     onClick={()=>signOut(auth)}
                     type="button" className="btn btn-link text-decoration-none text-white">Sign out</button>
                     </span>

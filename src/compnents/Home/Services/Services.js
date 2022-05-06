@@ -19,7 +19,7 @@ useEffect(()=>{
              <h1 className='services-title'>MY ITEMS</h1>
                 <div className="services-container">
                     {
-                        services.slice(0,3).map(service => <Service
+                        services.slice(0,6).map(service => <Service
                         key={service.id}
                         service={service}
                         ></Service>)

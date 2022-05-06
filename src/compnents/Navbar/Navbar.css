@@ -5,3 +5,13 @@
     justify-content: center;
     font-family: 'Times New Roman', Times, serif;
 }
+.nav-logo h6{
+    color: white;
+    margin-top: 3px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 900;
+   
+}
+.nav-font{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

@@ -18,7 +18,7 @@ const Inventory = () => {
         <div className='container'>
             <h1 className='text-center text-danger'>Total Product:{laptops.length} </h1>
             <div className="row">
-            <div className="items-container">
+            <div className="items-container my-5">
                     {
                         laptops.map(item => <SingleItem
                         key={item._id}

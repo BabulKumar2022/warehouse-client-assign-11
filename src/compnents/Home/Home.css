@@ -46,4 +46,16 @@ margin: 15px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.image-area img{
+width: 100%;
+}
+.most-stocked-items{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.text-area {
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
