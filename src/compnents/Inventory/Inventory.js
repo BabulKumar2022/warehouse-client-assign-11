@@ -16,7 +16,7 @@ const Inventory = () => {
 
     return (
         <div className='container'>
-            <h1>Inventory:{laptops.length} </h1>
+            <h1 className='text-center text-danger'>Total Product:{laptops.length} </h1>
             <div className="row">
             <div className="items-container">
                     {
