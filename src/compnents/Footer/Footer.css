@@ -1,7 +1,49 @@
+
 .footer-area{
-    height: 100px;
-    width: 100%;
-    background-color: rgb(10, 11, 11);
-    color: white;
-    text-align: center;
+	background:#0a0808;
+	margin-top:50px;
+	padding:70px 0;
+}
+.footer-area,.footer-area a{
+	color:#eadcdc;
+}
+
+.footer-area ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-transform:uppercase;
+	font-weight:700;
+	margin-bottom:10px;
+}
+.footer-area li{
+	display:inline-block;
+	padding-right:39px;
+  
+}
+.footer-area li a{
+	display:inline-block;
+	padding-right:39px;
+    text-decoration: none;
+}
+
+
+.email-subscriber-form input[type=email]{
+background:#fff;
+border:1px solid #ddd;
+padding:10px 20px;
+min-width:280px;
+	
+}
+.email-subscriber-form input[type=submit]{
+	background:#E84F88;
+	color:#fff;
+	border:none;
+	padding:11px 20px;
+	font-weight:700;
+	
+}
+
+.footer-menu{
+	margin-top:10px;
 }

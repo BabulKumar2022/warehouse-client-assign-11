@@ -28,7 +28,10 @@ const Login = () => {
   if(user){
       navigate(from, {replace: true});
   }
-
+let errorElement;
+   if (error){
+    errorElement = <p className='text-danger'> Error: {error?.message}</p>
+   };
  const handleSubmit = event =>{
      event.preventDefault();
     const email = emailRef.current.value;
@@ -69,6 +72,7 @@ const Login = () => {
                 </Button>
             </Form>
             <p>New to laptop deals ? <Link to={'/register'} className='text-danger text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
+            {errorElement}
             <SocialLogin></SocialLogin>
             <ToastContainer />
         </div>
