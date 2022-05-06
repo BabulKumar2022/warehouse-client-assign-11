@@ -30,14 +30,14 @@ const Navbar = () => {
                 <Link className="nav-link" to="/contactus">Contact Us</Link>
                 </li>
                 
-                <li className="nav-item">
+                {/* <li className="nav-item">
                 <Link className="nav-link text-white" to="/totalitem">{!user ? '' : 'Total item'}</Link>
-                </li>
+                </li> */}
                 <li className="nav-item">
                 <Link className="nav-link text-white" to="/inventory/id">{!user ? '' : 'Inventory'}</Link>
                 </li>
                 <li className="nav-item">
-                <Link className="nav-link text-white" to="/manageitem">{!user ? '' : 'Manage Item'}</Link>
+                <Link className="nav-link text-white" to="/manage/:id">{!user ? '' : 'Manage'}</Link>
                 </li>
                 <li className="nav-item">
                 <Link className="nav-link text-white" to="/additem">{!user ? '' : 'Add Item'}</Link>

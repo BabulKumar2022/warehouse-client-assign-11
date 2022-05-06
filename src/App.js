@@ -17,6 +17,7 @@ import ManageItem from './compnents/ManageItem/ManageItem';
 import AddItem from './compnents/AddItem/AddItem';
 import Manage from './compnents/Manage/Manage';
 
+
 function App() {
   return (
     <div className="App">
@@ -49,7 +50,11 @@ function App() {
           <AddItem></AddItem>
         </RequireAuth>
       }></Route>
-      <Route path='manage' element={<Manage></Manage>}></Route>
+      <Route path='/manage/:id' element={
+        <RequireAuth>
+          <Manage></Manage>
+        </RequireAuth>
+      }></Route>
       <Route path='contactus' element={<ContactUs></ContactUs>}></Route>
       <Route path='login' element={<Login></Login>}></Route>
       <Route path="/register" element={<Register></Register>}></Route>

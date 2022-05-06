@@ -14,16 +14,9 @@ const Inventory = () => {
     }, [])
 
 
-
-
-
-
-
     return (
         <div className='container'>
-            <h1>Inventory:{inventoryId} </h1>
-            
-           
+            <h1>Inventory:{laptops.length} </h1>
             <div className="row">
             <div className="items-container">
                     {

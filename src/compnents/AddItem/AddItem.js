@@ -28,11 +28,6 @@ const AddItem = () => {
         event.target.reset();
     })
 
-
-
-
-
-
    }
 
 
@@ -44,7 +39,7 @@ const AddItem = () => {
                 <br />
                 <input type="text"  name="email" placeholder='email name' required/>
                 <br />
-                <input type="submit" value='Add Item'/>
+                <button className='btn btn-primary m-2' type="submit">Add +</button>
             </form>
             
         </div>

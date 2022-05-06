@@ -17,7 +17,7 @@ const Home = () => {
                 </div>
 
             </div>
-            <Services></Services>
+            <Services ></Services>
             
             <section>
                 <div className="most stocked items">
