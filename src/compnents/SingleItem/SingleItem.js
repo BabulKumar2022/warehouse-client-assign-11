@@ -36,7 +36,7 @@ const SingleItem = ({item}) => {
               <p>Price: {price}</p>
               <p><small>{description}</small> </p>
               <h5>Supplier:{supplier}</h5>
-          <button  onClick={() => handleUserDelete(_id)} className='btn btn-danger m-2'>Delivered</button>
+          <button  onClick={() => handleUserDelete(_id)} className='btn btn-danger m-2'>Deliver</button>
           <Link to={`/manage/${_id}`}><button className='btn btn-primary'>Update</button> </Link>
         </div>
     );
