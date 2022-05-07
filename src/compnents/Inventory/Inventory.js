@@ -6,6 +6,7 @@ import './Inventory.css'
 const Inventory = () => {
     const {inventoryId} = useParams();
     const [laptops, setLaptops] = useState([]);
+    
 
     useEffect(() =>{
         fetch('http://localhost:5000/laptops')
@@ -13,10 +14,12 @@ const Inventory = () => {
         .then(data => setLaptops(data));
     }, [])
 
+ 
 
     return (
         <div className='container'>
             <h1 className='text-center text-danger'>Total Product:{laptops.length} </h1>
+            <h1 className='text-center text-danger'>delivered:</h1>
             <div className="row">
             <div className="items-container my-5">
                     {

@@ -11,7 +11,7 @@ const SingleItem = ({item}) => {
          const proceed = window.confirm('Are you sure, you want to delete this product?');
          if(proceed){
             console.log('deleting one product', id);
-            const url = `http://localhost:5000/laptops/${_id}`;
+            const url = `http://localhost:5000/laptops/${id}`;
             fetch(url , {
                 method: 'DELETE'
             })
@@ -36,7 +36,7 @@ const SingleItem = ({item}) => {
               <p>Price: {price}</p>
               <p><small>{description}</small> </p>
               <h5>Supplier:{supplier}</h5>
-          <button  onClick={() => handleUserDelete(_id)} className='btn btn-danger m-2'>Delete</button>
+          <button  onClick={() => handleUserDelete(_id)} className='btn btn-danger m-2'>Delivered</button>
           <Link to={`/manage/${_id}`}><button className='btn btn-primary'>Update</button> </Link>
         </div>
     );
