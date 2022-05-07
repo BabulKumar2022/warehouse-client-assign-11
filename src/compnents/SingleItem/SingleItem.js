@@ -8,7 +8,7 @@ const SingleItem = ({item}) => {
 
 // function for delete
     const handleUserDelete = id =>{
-         const proceed = window.confirm('Are you sure, you want to delete this product?');
+         const proceed = window.confirm('Are you sure, you want to deliver this product?');
          if(proceed){
             console.log('deleting one product', id);
             const url = `http://localhost:5000/laptops/${id}`;
@@ -32,10 +32,12 @@ const SingleItem = ({item}) => {
     return (
         <div className='single-item'>
               <img className='w-100 box-shadow' src={img} alt="" />
-              <h3> {name}</h3>
-              <p>Price: {price}</p>
-              <p><small>{description}</small> </p>
-              <h5>Supplier:{supplier}</h5>
+              <h6> {name}</h6>
+              <div className="inner-text">
+                <p>Price: {price}</p>
+                <p><small>{description}</small> </p>
+              </div>
+              <h6>Supplier:{supplier}</h6>
           <button  onClick={() => handleUserDelete(_id)} className='btn btn-danger m-2'>Deliver</button>
           <Link to={`/manage/${_id}`}><button className='btn btn-primary'>Update</button> </Link>
         </div>

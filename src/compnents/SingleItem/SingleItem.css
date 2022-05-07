@@ -1,9 +1,11 @@
 .single-item{
+font-family: Georgia, 'Times New Roman', Times, serif;
     border: 1px solid rgb(154, 129, 94);
     border-radius: 10px;
     padding-bottom: 10px;
     text-align: center;
-}
-.box-shadow{
+    font-size: 14px;
+    padding: 5px;
   
 }
+

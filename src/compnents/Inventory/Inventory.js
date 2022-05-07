@@ -18,17 +18,17 @@ const Inventory = () => {
 
     return (
         <div className='container'>
-            <h1 className='text-center text-danger'>Total Product:{laptops.length} </h1>
-            <h1 className='text-center text-danger'>delivered:{(laptops.length) - ((24)+1)}</h1>
+            <h3 className='text-center text-primary'>Remain Product:{laptops.length} </h3>
+            <h3 className='text-center text-danger'>Delivered:{(laptops.length) - ((laptops.length)+10)}</h3>
             <div className="row">
-            <div className="items-container my-5">
-                    {
-                        laptops.map(item => <SingleItem
-                        key={item._id}
-                        item ={item}
-                        ></SingleItem>)
-                    }
-                </div>
+                <div className="items-container my-5">
+                        {
+                            laptops.map(item => <SingleItem
+                            key={item._id}
+                            item ={item}
+                            ></SingleItem>)
+                        }
+                 </div>
             </div>
 
         </div>

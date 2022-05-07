@@ -18,6 +18,7 @@ const Footer = () => {
 							</ul>
 						</div>
 						<p> <small>Copyright&copy;2022 Laptop deals.com</small> </p>
+						<p> <small>Email: bb3583400@gmail.com</small> </p>
 					</div>
 					<div class="col-md-6 text-right">
 					

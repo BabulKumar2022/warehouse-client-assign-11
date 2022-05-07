@@ -8,7 +8,7 @@ const Home = (_id) => {
 
     const navigate = useNavigate();
     const navigateToServiceDetail = id =>{
-        navigate(`/manage/${_id}`)
+        navigate(`/inventory/${_id}`)
     }
 
 

@@ -39,7 +39,7 @@ const Navbar = () => {
                 <Link className="nav-link text-white" to="/manage/:id">{!user ? '' : 'Update'}</Link>
                 </li>
                 <li className="nav-item">
-                <Link className="nav-link text-white " to="/additem">{!user ? '' : 'Add-Item'}</Link>
+                <Link className="nav-link text-white " to="/additem">{!user ? '' : 'Add-My-Item'}</Link>
                 </li>
             </ul>
             <span className="navbar-text">

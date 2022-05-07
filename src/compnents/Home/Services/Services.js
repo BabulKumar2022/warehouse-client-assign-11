@@ -16,7 +16,7 @@ useEffect(()=>{
     return (
         <div id="services" className='container'>
             <div className="row">
-             <h1 className='services-title'>MY ITEMS</h1>
+             <h1 className='services-title'>ITEMS</h1>
                 <div className="services-container">
                     {
                         services.slice(0,6).map(service => <Service
