@@ -11,7 +11,7 @@ const SingleItem = ({item}) => {
          const proceed = window.confirm('Are you sure, you want to deliver this product?');
          if(proceed){
             console.log('deleting one product', id);
-            const url = `http://localhost:5000/laptops/${id}`;
+            const url = `https://pacific-wildwood-26590.herokuapp.com/laptops/${id}`;
             fetch(url , {
                 method: 'DELETE'
             })
@@ -31,7 +31,7 @@ const SingleItem = ({item}) => {
 
     return (
         <div className='single-item'>
-              <img className='w-100 box-shadow' src={img} alt="" />
+              <img className='w-100 box-shadow' id='image-size' src={img} alt="" />
               <h6> {name}</h6>
               <div className="inner-text">
                 <p>Price: {price}</p>

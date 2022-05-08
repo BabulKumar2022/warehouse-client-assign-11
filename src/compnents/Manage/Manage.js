@@ -6,7 +6,7 @@ const Manage = () => {
     const {id} = useParams();
     const [updateProduct, setUpdateProduct] = useState({});
     useEffect(() =>{
-        const  url = `http://localhost:5000/laptops/${id}`;
+        const  url = `https://pacific-wildwood-26590.herokuapp.com/laptops/${id}`;
         fetch(url)
         .then(res => res.json())
         .then(data => setUpdateProduct(data))
@@ -26,7 +26,7 @@ const Manage = () => {
          console.log(updatedUser)
  
  //for update send data to server
-        const url =`http://localhost:5000/laptops/${id}`;
+        const url =`https://pacific-wildwood-26590.herokuapp.com/laptops/${id}`;
      fetch(url, {
          method: 'PUT',
          headers:{

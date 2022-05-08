@@ -47,7 +47,10 @@ let errorElement;
         }
 
 
-
+        if(user){
+            navigate('/inventory/id');
+          
+        }
     return (
         <div id='login' className='container w-50 mx-auto'>
             <h1 className=' text-center text-primary mt-2 ' >Login</h1>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css'
 
 const Footer = () => {
@@ -12,9 +13,9 @@ const Footer = () => {
 					<div class="col-md-6">
 						<div class="footer-menu">
 							<ul>
-								<li><a href="">home</a></li>
-								<li><a href="">blogs</a></li>
-								<li><a href="">contact</a></li>
+								<li><Link to="/home">home</Link ></li>
+								<li><Link to="/blogs">blogs</Link ></li>
+								<li><Link to="/contactus">contact</Link ></li>
 							</ul>
 						</div>
 						<p> <small>Copyright&copy;2022 Laptop deals.com</small> </p>
@@ -24,7 +25,7 @@ const Footer = () => {
 					
 						<div class="email-subscriber-form">
 							<input type="email" placeholder="Get solution email us "/>
-							<input type="submit" value="EMAIL US"/>
+							<input type="submit" value=" SEND EMAIL US"/>
 						</div>
 					</div>
                     

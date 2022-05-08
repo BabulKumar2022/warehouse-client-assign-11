@@ -1,6 +1,6 @@
 # This is my ware house inventory website
 
-This website was build with React.js(https://github.com/facebook/create-react-app).
+This website was build with React.js(https://email-pass-auth-623d3.firebaseapp.com/).
 
 ## Electronic products (Laptop) are managed by my project:
 

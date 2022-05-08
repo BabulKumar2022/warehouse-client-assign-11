@@ -15,7 +15,8 @@ const SocialLogin = () => {
         );
       }
       if(user){
-          navigate('/inventory');
+          navigate('/inventory/id');
+        
       }
     
     return (

@@ -9,7 +9,7 @@ const Inventory = () => {
     
 
     useEffect(() =>{
-        fetch('http://localhost:5000/laptops')
+        fetch('https://pacific-wildwood-26590.herokuapp.com/laptops')
         .then(res => res.json())
         .then(data => setLaptops(data));
     }, [])

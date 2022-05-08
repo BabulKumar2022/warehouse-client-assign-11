@@ -1,5 +1,5 @@
 .single-item{
-font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
     border: 1px solid rgb(154, 129, 94);
     border-radius: 10px;
     padding-bottom: 10px;
@@ -9,3 +9,6 @@ font-family: Georgia, 'Times New Roman', Times, serif;
   
 }
 
+.single-item img{
+width: 50%;
+}

@@ -9,7 +9,7 @@ const AddItem = () => {
     const [laptops, setLaptops] = useState([]);
 
     useEffect(() =>{
-        fetch('http://localhost:5000/laptops')
+        fetch('https://pacific-wildwood-26590.herokuapp.com/laptops')
         .then(res => res.json())
         .then(data => setLaptops(data));
     }, [])
@@ -28,7 +28,7 @@ const AddItem = () => {
 
 // send data to server
 
-    fetch('http://localhost:5000/user',{
+    fetch('https://pacific-wildwood-26590.herokuapp.com/user',{
         method: 'POST',
         headers:{
             'content-type': 'application/json'
