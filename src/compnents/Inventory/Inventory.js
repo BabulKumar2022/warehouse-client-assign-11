@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import {  useParams } from 'react-router-dom';
 import SingleItem from '../SingleItem/SingleItem';
 import './Inventory.css'
 
 const Inventory = () => {
-    const {inventoryId} = useParams();
+    // const {inventoryId} = useParams();
     const [laptops, setLaptops] = useState([]);
     
 
